@@ -1,0 +1,13 @@
+make.exe --dry-run --always-make --keep-going --print-directory
+make: Entering directory 'c:/Users/arqan/OneDrive/�rea de Trabalho/GIT/projeto-1---campo-minado-team-joao-paulo-e-andre'
+echo Hello, we're getting things ready for ya...
+ 
+mkdir dist
+g++ -c src/utils/string.cpp -o dist/string.o
+g++ -c src/utils/time.cpp -o dist/time.o
+g++ -c src/Game.cpp -o dist/Game.o
+g++ -c src/main.cpp -o dist/main.o
+g++ -o dist/main dist/main.o dist/Game.o
+./dist/main
+make: Leaving directory 'c:/Users/arqan/OneDrive/�rea de Trabalho/GIT/projeto-1---campo-minado-team-joao-paulo-e-andre'
+ 
